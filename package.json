@@ -1,10 +1,10 @@
 {
-  "name": "vben-admin",
-  "version": "2.8.0",
+  "name": "xcr-admin",
+  "version": "0.0.1",
   "author": {
-    "name": "vben",
-    "email": "anncwb@126.com",
-    "url": "https://github.com/anncwb"
+    "name": "xcr",
+    "email": "itxcr@protonmail.com",
+    "url": "https://github.com/itxcr"
   },
   "scripts": {
     "bootstrap": "pnpm install",
@@ -150,13 +150,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/anncwb/vue-vben-admin.git"
+    "url": "git+https://github.com/itxcr/xcr-admin.git"
   },
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/anncwb/vue-vben-admin/issues"
-  },
-  "homepage": "https://github.com/anncwb/vue-vben-admin",
+  "homepage": "https://github.com/itxcr/xcr-admin",
   "engines": {
     "node": "^12 || >=14"
   },
