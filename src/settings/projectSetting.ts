@@ -12,46 +12,53 @@ import {
 import { SIDE_BAR_BG_COLOR_LIST, HEADER_PRESET_BG_COLOR_LIST } from './designSetting';
 import { primaryColor } from '../../build/config/themeConfig';
 
-// ! You need to clear the browser cache after the change
+// ! 改动后需要清空浏览器缓存
 const setting: ProjectConfig = {
-  // Whether to show the configuration button
+  // 是否显示SettingButton
   showSettingButton: true,
 
-  // Whether to show the theme switch button
+  // 是否显示主题切换按钮
   showDarkModeToggle: true,
 
-  // `Settings` button position
+  // 设置按钮位置 可选项
+  // SettingButtonPositionEnum.AUTO: 自动选择
+  // SettingButtonPositionEnum.HEADER: 位于头部
+  // SettingButtonPositionEnum.FIXED: 固定在右侧
   settingButtonPosition: SettingButtonPositionEnum.AUTO,
 
-  // Permission mode
+  // 权限模式,默认前端角色权限模式
+  // ROUTE_MAPPING: 前端模式（菜单由路由生成，默认）
+  // ROLE：前端模式（菜单路由分开）
   permissionMode: PermissionModeEnum.ROUTE_MAPPING,
 
-  // Permission-related cache is stored in sessionStorage or localStorage
+  // 权限缓存存放位置。默认存放于localStorage
   permissionCacheType: CacheTypeEnum.LOCAL,
 
-  // Session timeout processing
+  // 会话超时处理方案
+  // SessionTimeoutProcessingEnum.ROUTE_JUMP: 路由跳转到登录页
+  // SessionTimeoutProcessingEnum.PAGE_COVERAGE: 生成登录弹窗，覆盖当前页面
   sessionTimeoutProcessing: SessionTimeoutProcessingEnum.ROUTE_JUMP,
 
-  // color
+  // 项目主题色
   themeColor: primaryColor,
 
-  // Website gray mode, open for possible mourning dates
+  // 网站灰色模式，用于可能悼念的日期开启
   grayMode: false,
 
-  // Color Weakness Mode
+  // 色弱模式
   colorWeak: false,
 
-  // Whether to cancel the menu, the top, the multi-tab page display, for possible embedded in other systems
+  // 是否取消菜单,顶部,多标签页显示, 用于可能内嵌在别的系统内
   fullContent: false,
 
-  // content mode
+  // 主题内容宽度
   contentMode: ContentEnum.FULL,
 
-  // Whether to display the logo
+  // 是否显示logo
   showLogo: true,
 
-  // Whether to show footer
-  showFooter: false,
+  // 是否显示底部信息 copyright
+  showFooter: true,
 
   // Header configuration
   headerSetting: {
