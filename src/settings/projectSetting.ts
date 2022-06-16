@@ -11,6 +11,7 @@ import {
 } from '/@/enums/appEnum';
 import { SIDE_BAR_BG_COLOR_LIST, HEADER_PRESET_BG_COLOR_LIST } from './designSetting';
 import { primaryColor } from '../../build/config/themeConfig';
+import { isDevMode } from '/@/utils/env';
 
 // ! 改动后需要清空浏览器缓存
 const setting: ProjectConfig = {
@@ -157,7 +158,7 @@ const setting: ProjectConfig = {
   },
 
   // 是否开启KeepAlive缓存  开发时候最好关闭,不然每次都需要清除缓存
-  openKeepAlive: !import.meta.env.DEV,
+  openKeepAlive: !isDevMode(),
 
   // Automatic screen lock time, 0 does not lock the screen. Unit minute default 0
   lockTime: 0,
