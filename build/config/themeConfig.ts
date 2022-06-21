@@ -1,5 +1,6 @@
 import { generate } from '@ant-design/colors';
 
+// 默认全局主题色
 export const primaryColor = '#3986fe';
 
 export const darkMode = 'light';

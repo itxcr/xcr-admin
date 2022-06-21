@@ -183,7 +183,7 @@ const setting: ProjectConfig = {
 
   // 切换界面的时候是否取消已经发送但是未响应的http请求。
   // 如果开启,想对单独接口覆盖。可以在单独接口设置
-  removeAllHttpPending: false,
+  removeAllHttpPending: true,
 };
 
 export default setting;
