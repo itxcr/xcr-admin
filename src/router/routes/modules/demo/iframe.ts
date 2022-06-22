@@ -21,7 +21,7 @@ const iframe: AppRouteModule = {
       name: 'Doc',
       component: IFrame,
       meta: {
-        frameSrc: 'https://vvbin.cn/doc-next/',
+        frameSrc: 'https://itxcr.com/doc-next',
         title: t('routes.demo.iframe.doc'),
       },
     },
@@ -35,7 +35,7 @@ const iframe: AppRouteModule = {
       },
     },
     {
-      path: 'https://vvbin.cn/doc-next/',
+      path: 'https://itxcr.com/doc-next',
       name: 'DocExternal',
       component: IFrame,
       meta: {
