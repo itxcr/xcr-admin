@@ -31,6 +31,7 @@ export const useErrorLogStore = defineStore({
     addErrorLogInfo(info: ErrorLogInfo) {
       const item = {
         ...info,
+        // @ts-ignore
         time: formatToDateTime(new Date()),
       };
       this.errorLogInfoList = [item, ...(this.errorLogInfoList || [])];
